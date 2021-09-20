@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="listadop"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ingresa tus datos para la asistencia</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text color="primary">
+    <h1>Datos de alumno</h1>
+  </ion-text>
+
+  <ion-item>
+    <ion-label>Usuario : </ion-label>
+    <ion-input placeholder="Ej:Bruno Diaz" #nombre></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label> edad : </ion-label>
+    <ion-input placeholder="Ej:23" type="number" #edad></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Url de Foto alumno</ion-label>
+    <ion-input #url></ion-input>
+  </ion-item>
+  <br><br>
+  <ion-button (click)="guardar(nombre , edad , url)" expand="block"  shape="round">
+    Guardar
+  </ion-button>
+
+</ion-content>

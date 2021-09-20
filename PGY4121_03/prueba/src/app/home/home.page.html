@@ -1,0 +1,56 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    
+    <div id="container">
+      <strong>BIENVENIDO A LA ASISTENCIA ONLINE!</strong>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div class="div-logo">
+    <img class="img" src="/assets/img/duoc.png" alt="logo">
+  </div>
+  
+  <div id="container">
+   
+    
+    <br><br>
+    <strong>Iniciar sesion</strong>
+    
+    <ion-item>
+      <ion-label>Usuario : </ion-label>
+      <ion-input  placeholder ="Ej:pa.ormenol" #usuario></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password : </ion-label>
+      <ion-input  placeholder="ingresa tu password" #password></ion-input>
+    </ion-item>
+  
+
+    
+      
+    
+    
+    
+    <ion-button (click)="iniciarsesion(usuario , password)" expand="block" fill="clear" shape="round">
+      Iniciar sesion
+    </ion-button>
+    
+    <ion-button (click)="olvidecontrasena(usuario , password)" expand="block" fill="clear" shape="round" color="danger">
+      Olvide mi password
+    </ion-button>
+   
+
+    
+    
+  </div>
+
+  
+
+  
+</ion-content>
+
+
